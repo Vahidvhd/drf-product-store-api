@@ -11,7 +11,7 @@ class Category(models.Model):
     
 
 class Product(models.Model):
-    Category=models.ForeignKey(
+    category=models.ForeignKey(
         Category,
         on_delete=models.SET_NULL,
         null=True, blank=True,
