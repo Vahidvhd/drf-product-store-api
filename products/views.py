@@ -34,4 +34,4 @@ class ProductViewSet(viewsets.ModelViewSet):
     filterset_fields = ['category', 'is_active']
     search_fields = ['name']
     ordering_fields = ['id', 'name', 'price', 'created_at']
-    ordering = ['-created_at']
+    ordering = ['id']
